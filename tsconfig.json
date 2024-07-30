@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "lib": ["ES2023", "dom"],
+        "noEmit": true,
+        "strict": true,
+    },
+    "include": ["src"],
+}
