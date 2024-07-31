@@ -6,7 +6,7 @@ export const main = async (args: Array<string>): Promise<void> => {
         switch (command) {
             case 'add': {
                 // Make an HTTP POST request to add the value.
-                const response = await fetch('https://example.com/api/v1/stuff', {
+                const response = await fetch('https://example.com/api/v2/stuff', {
                     method: 'POST',
                     body: JSON.stringify({value}),
                 });
@@ -17,7 +17,7 @@ export const main = async (args: Array<string>): Promise<void> => {
             }
             case 'delete': {
                 // Make an HTTP DELETE request to remove the value.
-                const response = await fetch(`https://example.com/api/v1/stuff/${encodeURIComponent(value)}`, {
+                const response = await fetch(`https://example.com/api/v2/stuff/${encodeURIComponent(value)}`, {
                     method: 'DELETE',
                 });
                 if (response.status < 200 || response.status > 299) {
